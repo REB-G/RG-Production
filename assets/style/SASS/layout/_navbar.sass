@@ -7,6 +7,10 @@
         width: 100%
         transition: opacity 5s ease-in-out
 
+    &__logo
+        width: 15rem
+        transition: opacity 5s ease-in-out
+
     &__list
         width: 100%
         +utils.flex(column, space-around, center)
@@ -42,3 +46,9 @@
 .hide-phone-nav-svg
     display: none
 
+.hide-logo
+    opacity: 0
+    visibility: hidden
+    height: 0
+    width: 0
+    transition: opacity 5s ease-in-out

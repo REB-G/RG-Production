@@ -1,0 +1,15 @@
+@use "../../utils/_main" as utils
+
+.about-index
+    +utils.flex(column, center, center)
+    margin-top: 4rem
+
+    &__title
+        font-size: 1.8rem
+
+    &__text-section
+        font-size: 1.3rem
+        +utils.flex(column, center, center)
+
+        &--text
+            text-align: center

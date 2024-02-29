@@ -1,0 +1,35 @@
+@use "../../utils/_main" as utils
+
+.services-index
+    +utils.flex(column, center, center)
+    margin-top: 4rem
+
+    &__title
+        font-size: 1.8rem
+
+    &__text-section
+        font-size: 1.3rem
+        +utils.flex(column, center, center)
+
+        &--text
+            text-align: center
+
+    &__responsive-section
+        +utils.flex(column, center, center)
+        margin-top: 2rem
+        width: 100%
+
+.responsive-section-index-list
+    +utils.flex(row, space-around, center)
+    width: 100%
+
+    &__element
+        +utils.flex(column, center, center)
+
+        &--info
+            text-align: center
+            margin-bottom: 0.5rem
+
+        &--svg
+            width: 5rem
+            fill: utils.$gold
