@@ -1,15 +1,31 @@
 @use "../../utils/_main" as utils
 
 .about-index
-    +utils.flex(column, center, center)
-    margin-top: 4rem
+    +utils.flex(row, center, center)
+    margin-top: 15%
 
-    &__title
-        font-size: 1.8rem
+    &__image-section
+        width: 50%
+        height: 50%
+        +utils.flex(row, center, center)
+
+        &--image
+            // width: 100%
+            width: 70%
 
     &__text-section
-        font-size: 1.3rem
+        width: 50%
+        height: 50%
+        padding: 10%
         +utils.flex(column, center, center)
 
+        &--title
+            font-size: 1.8rem
+            margin-bottom: 5%
+
         &--text
-            text-align: center
+            font-size: 1.3rem
+            +utils.flex(column, center, center)
+
+.description-text-of-about-section-index
+    text-align: center
